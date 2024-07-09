@@ -1,29 +1,33 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      const header = document.querySelector(".header");
-      if (window.scrollY >= 150) {
-        header.classList.add("sticky-header");
-      } else {
-        header.classList.remove("sticky-header");
-      }
-    };
-
     window.addEventListener("scroll", handleScroll);
-
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  let navbarClasses = ["navbar"];
+  if (scrolled) {
+    navbarClasses.push("scrolled");
+  }
   return (
     <>
-      <header className="header">
-        <nav>
+      <header>
+        <nav className={navbarClasses.join(" ")}>
           <div className="nav_logo">
             <img src="logo (8).png" alt="" />
           </div>

@@ -5,15 +5,14 @@ header {
     align-items: center;
     padding: 0 2rem;
     justify-content: space-between;
-  }
-  .sticky-header {
     position: fixed;
+    left: 0;
     top: 0;
-    width: 100%;
-    background-color: #000000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 999;
+    width: -webkit-fill-available;
+    max-width: inherit;
   }
+
   ul {
     display: flex;
     gap: 2rem;
@@ -43,9 +42,11 @@ header {
     height: 2px;
     background: #c9f31d;
   }
+
   ul a:hover:after {
     opacity: 1;
   }
+
   .nav_button {
     width: 176px;
     display: flex;
@@ -58,5 +59,21 @@ header {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+  }
+}
+
+.scrolled {
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 1000;
+  background: #131313;
+  max-width: inherit;
+  box-shadow: 0 0 30px 0 rgba(87, 95, 245, 0.1);
+  transition: all 0.3s ease-in;
+}
+
+@media (max-width: 992px) {
+  .navbar ul {
+    display: none;
   }
 }
