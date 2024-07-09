@@ -3,10 +3,9 @@ header {
     display: flex;
     height: 100px;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 1rem;
     justify-content: space-between;
     position: fixed;
-    left: 0;
     top: 0;
     z-index: 999;
     width: -webkit-fill-available;
@@ -75,5 +74,11 @@ header {
 @media (max-width: 992px) {
   .navbar ul {
     display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  header nav {
+    padding: 0;
   }
 }
