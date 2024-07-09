@@ -129,10 +129,10 @@
 
 @media (max-width: 1160px) {
   .number-counter {
-    margin: auto;
+    margin-left: auto;
   }
   .Landing_content {
-    margin: auto;
+    margin-right: auto;
   }
   .inner_content_container {
     gap: 1rem;
