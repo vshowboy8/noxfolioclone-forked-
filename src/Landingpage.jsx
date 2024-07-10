@@ -1,5 +1,4 @@
 import React from "react";
-import Bglines from "./Bglines";
 import "./landingPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
@@ -7,11 +6,10 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 function Landingpage() {
   return (
     <>
-      <div className="landingpage">
-        <Bglines />
+      <div className="landingpage container-1440">
         <div className="inner_content_container">
           <div className="Landing_content">
-            <span>Hello, i’m</span>
+            <span className="h2">Hello, i’m</span>
             <h1>
               <b>Roy C. Jones</b>
               <br />

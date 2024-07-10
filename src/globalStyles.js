@@ -5,8 +5,54 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap');
 
   body{
-    font-family: 'DM Sans', sans-serif;
+    font-family: "Inter", sans-serif;
+    color: var(--base-color);
+    background: #131313;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+    --base-color: hsla(0,0%,100%,.65);
+    --heading-color: #fff;
+    --primary-color: #c9f31d;
+    --lighter-color: #1f1f1f;
+    --black-color: #070707;
+    --border-color: hsla(0,0%,100%,.1);
   }
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+
+  .h2, h2 {
+  font-size: 45px !important;
+  }
+
+  .h1, h1 {
+  font-size: 65px;
+  }
+
+  .accordion-item .accordion-button, .form-control, .h1, .h2, .h3, .h4, .h5, .h6, .heading, .nice-select, h1, h2, h3, h4, h5, h6, input, select, textarea {
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+  @media (min-width: 1200px) {
+  .h1, h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+@media only screen and (max-width: 1399px) {
+ h1 {
+      font-size: 55px;
+  }
+}
+  @media (min-width: 1200px) {
+    .h2, h2 {
+        font-size: 2rem;
+    }
+}
+  
     
     .button-primary{
     background: #c9f31d;

@@ -3,14 +3,18 @@ import Navbar from "./Navbar";
 import GlobalStyle from "./globalStyles";
 import Landingpage from "./Landingpage";
 import "./index.css";
+import About from "./About";
+import Bglines from "./Bglines";
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <div className="container-1440">
+      <div className="parent">
+        <Bglines />
+        <GlobalStyle />
         <Navbar />
         <Landingpage />
+        <About />
       </div>
     </>
   );

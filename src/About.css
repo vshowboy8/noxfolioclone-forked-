@@ -1,0 +1,152 @@
+.full-container {
+  background: #000;
+}
+.about_container {
+  padding: 100px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-title {
+  font-weight: 500;
+  display: block;
+  color: hsla(0, 0%, 100%, 0.65);
+  margin-bottom: 15px;
+}
+.about_content p {
+  max-width: 620px;
+  margin-bottom: 20px;
+}
+.about_content h2 span {
+  color: var(--primary-color);
+}
+.about_content h2 {
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.about_image {
+}
+
+.about_image img {
+  width: -webkit-fill-available;
+  height: inherit;
+  margin-left: 40px;
+  object-fit: contain;
+}
+
+ul.list-collection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+ul.list-collection li {
+  width: 50%;
+}
+
+ul.list-collection li {
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+ul.list-collection li:before {
+  content: "";
+  line-height: 1;
+  margin-top: 2px;
+  margin-right: 12px;
+  background-image: url("./check-solid.svg");
+  color: var(--primary-color);
+  height: 23px;
+  width: 23px;
+  background-repeat: no-repeat;
+}
+
+.left_content {
+  width: 100%;
+}
+.about_image {
+  width: 100%;
+}
+
+.about-info-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 580px;
+  border-radius: 20px;
+  padding: 16px 40px 16px;
+  background: var(--lighter-color);
+  border: 1px solid var(--border-color);
+  justify-content: space-between;
+}
+
+.info-box-item {
+  display: flex;
+  align-items: center;
+}
+
+.info-box-item i {
+  margin-right: 15px;
+  color: var(--black-color);
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+}
+
+.info-box-item .content {
+  line-height: 1.5;
+}
+
+.info-box-item .content span {
+  font-size: 14px;
+}
+
+.info-box-item .content a:not(:hover) {
+  color: #fff;
+}
+
+.info-box-item .content a:hover {
+  color: var(--primary-color);
+}
+
+@media only screen and (min-width: 376px) {
+  .info-box-item .content a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  ul.list-collection li {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .left_content {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+  .about_image {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about_container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about_image img {
+    width: auto;
+  }
+}

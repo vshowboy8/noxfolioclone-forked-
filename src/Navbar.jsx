@@ -26,21 +26,23 @@ const Navbar = () => {
   }
   return (
     <>
-      <header className="container-1440">
+      <header>
         <nav className={navbarClasses.join(" ")}>
-          <div className="nav_logo">
-            <img src="logo (8).png" alt="" />
-          </div>
-          <ul>
-            <a href="/">Home</a>
-            <a href="/">About US</a>
-            <a href="/">Offer</a>
-            <a href="/">Contact US</a>
-          </ul>
-          <div className="nav_button">
-            <button className="toggle_button">
-              <img src="sidebar-tottler.svg" alt=""></img>
-            </button>
+          <div className="nav_inner container-1440">
+            <div className="nav_logo">
+              <img src="logo (8).png" alt="" />
+            </div>
+            <ul>
+              <a href="/">Home</a>
+              <a href="/">About US</a>
+              <a href="/">Offer</a>
+              <a href="/">Contact US</a>
+            </ul>
+            <div className="nav_button">
+              <button className="toggle_button">
+                <img src="sidebar-tottler.svg" alt=""></img>
+              </button>
+            </div>
           </div>
         </nav>
       </header>
