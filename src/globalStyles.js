@@ -31,6 +31,15 @@ const GlobalStyle = createGlobalStyle`
   font-size: 65px;
   }
 
+  .h4, h4 {
+    line-height: 1.1;
+    font-size: 24px;
+}
+
+  .h6, h6 {
+    font-size: 16px;
+  }
+
   .accordion-item .accordion-button, .form-control, .h1, .h2, .h3, .h4, .h5, .h6, .heading, .nice-select, h1, h2, h3, h4, h5, h6, input, select, textarea {
     color: #fff;
     font-family: 'DM Sans', sans-serif;

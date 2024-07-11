@@ -51,7 +51,18 @@ function About() {
             </div>
           </div>
           <div className="about_image">
-            <img src="./about.jpg" />
+            <img className="main_image" src="./about.jpg" />
+            <div className="about-btn">
+              <img src="./btn-image1.png" />
+              <h6>Experience Designer</h6>
+            </div>
+            <div className="about-btn">
+              <img src="./btn-image2.png" />
+              <h6>Mark J. Collins</h6>
+            </div>
+            <div class="dot-shape">
+              <img src="./about-dot.png" alt="Shape" />
+            </div>
           </div>
         </div>
       </div>

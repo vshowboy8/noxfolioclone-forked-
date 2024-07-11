@@ -2,6 +2,7 @@ import React from "react";
 import "./landingPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Counter from "./Counter";
 
 function Landingpage() {
   return (
@@ -39,21 +40,15 @@ function Landingpage() {
           <div className="number-counter">
             <div className="counter-container">
               <div class="counter-item counter-text-wrap">
-                <span class="count-text plus" data-from="0" data-to="13">
-                  13
-                </span>
+                <Counter number={13} />
                 <span class="counter-title">Years Of Experience</span>
               </div>
               <div class="counter-item counter-text-wrap">
-                <span class="count-text k-plus" data-from="0" data-to="8">
-                  8
-                </span>
+                <Counter number={8} />
                 <span class="counter-title">Project Complete</span>
               </div>
               <div class="counter-item counter-text-wrap">
-                <span class="count-text percent" data-from="0" data-to="99">
-                  99
-                </span>
+                <Counter number={99} additionalContent="Extra" />
                 <span class="counter-title">Client Satisfactions</span>
               </div>
             </div>

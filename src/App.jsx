@@ -5,17 +5,23 @@ import Landingpage from "./Landingpage";
 import "./index.css";
 import About from "./About";
 import Bglines from "./Bglines";
+import Hidenbar from "./Hidenbar";
+import { BodyClassProvider } from './BodyClassContext';
 
 function App() {
   return (
     <>
-      <div className="parent">
-        <Bglines />
-        <GlobalStyle />
-        <Navbar />
-        <Landingpage />
-        <About />
-      </div>
+      <BodyClassProvider>
+        <div className="parent">
+          <div class="form-back-drop"></div>
+          <Hidenbar />
+          <Bglines />
+          <GlobalStyle />
+          <Navbar />
+          <Landingpage />
+          <About />
+        </div>
+      </BodyClassProvider>
     </>
   );
 }

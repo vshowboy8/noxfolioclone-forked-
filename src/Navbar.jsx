@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
+import { useBodyClass } from './BodyClassContext';
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,6 +26,14 @@ const Navbar = () => {
   if (scrolled) {
     navbarClasses.push("scrolled");
   }
+
+  // overlay
+
+  const { addClass } = useBodyClass();
+
+  const handleAddClass = () => {
+    addClass('side-content-visible'); // Specify the class name to add
+  };
   return (
     <>
       <header>
@@ -39,7 +49,7 @@ const Navbar = () => {
               <a href="/">Contact US</a>
             </ul>
             <div className="nav_button">
-              <button className="toggle_button">
+              <button onClick={handleAddClass} className="toggle_button">
                 <img src="sidebar-tottler.svg" alt=""></img>
               </button>
             </div>

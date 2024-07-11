@@ -1,0 +1,104 @@
+.form-back-drop {
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(0, 0, 0, .7);
+    visibility: hidden;
+    z-index: 9990;
+    transition: all .5s ease;
+}
+
+.hidden-bar {
+    position: fixed;
+    right: -350px;
+    top: 0;
+    opacity: 0;
+    width: 350px;
+    height: 100%;
+    z-index: 99999;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: var(--lighter-color);
+    border-left: 1px solid #231b26;
+    transition: all .5s ease;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hidden-bar .inner-box {
+    position: relative;
+    padding: 100px 40px 50px;
+}
+
+.hidden-bar .inner-box .cross-icon {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+.hidden-bar .inner-box h4 {
+    position: relative;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.hidden-bar .appointment-form {
+    position: relative;
+}
+
+.hidden-bar .appointment-form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hidden-bar .appointment-form input[type=email],
+.hidden-bar .appointment-form input[type=text],
+.hidden-bar .appointment-form textarea {
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 23px;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 16px;
+    background: none;
+    transition: all .3s ease;
+    border: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.hidden-bar .appointment-form textarea {
+    resize: none;
+}
+
+.hidden-bar .appointment-form .form-group button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-color: #fff;
+}
+
+.side-content-visible .form-back-drop {
+    opacity: 1;
+    left: 0;
+    visibility: visible;
+}
+
+.side-content-visible .hidden-bar {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+span.fa.fa-times:before{
+    content: "";
+}

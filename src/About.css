@@ -27,9 +27,10 @@
 }
 
 .about_image {
+  position: relative;
 }
 
-.about_image img {
+.about_image .main_image {
   width: -webkit-fill-available;
   height: inherit;
   margin-left: 40px;
@@ -118,6 +119,50 @@ ul.list-collection li:before {
   color: var(--primary-color);
 }
 
+.about-btn {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 32px;
+  color: var(--black-color);
+  padding: 10px 25px 10px 10px;
+  width: fit-content;
+  gap: 1rem;
+}
+
+.about-btn h6 {
+  color: #000;
+  margin: 0;
+}
+
+.about_image .dot-shape {
+  position: absolute;
+  left: -10%;
+  top: 25%;
+  animation: rotated_circle 10s linear infinite;
+}
+
+@keyframes rotated_circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.about_image .about-btn:first-of-type {
+  position: absolute;
+  bottom: 45%;
+  left: -10%;
+}
+
+.about_image .about-btn:nth-child(3) {
+  position: absolute;
+  bottom: 25%;
+  left: -15%;
+}
+
 @media only screen and (min-width: 376px) {
   .info-box-item .content a {
     font-size: 18px;
@@ -139,14 +184,66 @@ ul.list-collection li:before {
     flex: 0 0 auto;
     width: 41.66666667%;
   }
+  .about_content h2 {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1228px) and (min-width: 993px) {
+  .left_content {
+    width: 56.33333333%;
+  }
 }
 
 @media (max-width: 992px) {
   .about_container {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
   }
-  .about_image img {
-    width: auto;
+  .about_image .main_image {
+    margin-left: 100px;
+  }
+  .about_image .about-btn:first-of-type {
+    bottom: 45%;
+    left: 2%;
+  }
+
+  .about_image .about-btn:nth-child(3) {
+    bottom: 22%;
+    left: -3%;
+  }
+  .about_image .dot-shape {
+    left: 2%;
+    top: 18%;
+  }
+}
+
+@media (max-width: 600px) {
+  ul.list-collection li {
+    width: 100%;
+  }
+  .about-info-box {
+    gap: 2rem;
+  }
+  .about-btn h6 {
+    font-size: 14px;
+  }
+  .about-btn img {
+    height: 20px;
+    width: 20px;
+  }
+  .about_image .about-btn:first-of-type {
+    bottom: 45%;
+    left: 2%;
+  }
+
+  .about_image .about-btn:nth-child(3) {
+    bottom: 15%;
+    left: -3%;
+  }
+  .about_image .dot-shape {
+    left: 2%;
+    top: 18%;
   }
 }

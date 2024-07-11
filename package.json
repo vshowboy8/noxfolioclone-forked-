@@ -10,7 +10,8 @@
     "styled-components": "6.1.11",
     "@fortawesome/fontawesome-svg-core": "6.5.2",
     "@fortawesome/free-solid-svg-icons": "6.5.2",
-    "@fortawesome/react-fontawesome": "0.2.2"
+    "@fortawesome/react-fontawesome": "0.2.2",
+    "react-countup": "latest"
   },
   "devDependencies": {
     "@types/react": "18.2.38",
