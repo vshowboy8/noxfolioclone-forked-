@@ -98,11 +98,11 @@
 }
 
 .counter-item:nth-child(2) .number .counter::after {
-  content: "k +";
+  content: "k+";
 }
 
 .counter-item:nth-child(3) .number .counter::after {
-  content: "% +";
+  content: "%+";
 }
 
 .counter-item .number {
