@@ -45,6 +45,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'DM Sans', sans-serif;
 }
 
+.padded-container{
+  padding: 100px 30px;
+}
+
   @media (min-width: 1200px) {
   .h1, h1 {
       font-size: 2.5rem;

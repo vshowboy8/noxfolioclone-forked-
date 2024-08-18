@@ -1,0 +1,17 @@
+.big-icon {
+  font-size: 130px;
+  color: #c9f31d;
+  width: 270px;
+  height: 270px;
+  background: var(--lighter-color);
+  line-height: 270px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  padding: 3.5rem;
+  box-sizing: border-box;
+}
+
+.big-icon img {
+  width: -webkit-fill-available;
+}

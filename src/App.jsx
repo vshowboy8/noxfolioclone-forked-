@@ -6,7 +6,8 @@ import "./index.css";
 import About from "./About";
 import Bglines from "./Bglines";
 import Hidenbar from "./Hidenbar";
-import { BodyClassProvider } from './BodyClassContext';
+import { BodyClassProvider } from "./BodyClassContext";
+import Resume from "./Resume";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Navbar />
           <Landingpage />
           <About />
+          <Resume />
         </div>
       </BodyClassProvider>
     </>

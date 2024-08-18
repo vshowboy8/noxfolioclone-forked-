@@ -1,13 +1,18 @@
 import React from "react";
-import "./About.css";
+import "./Resume.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Resume() {
   return (
     <>
-      <div className="full-container">
-        <div className="about_container container-1440"></div>
+      <div className="resume_container padded-container container-1440">
+        <div className="resume_left">
+          <div className="big-icon">
+            <img src="./asterisk (1).png" />
+          </div>
+        </div>
+        <div className="resume_right"></div>
       </div>
     </>
   );
